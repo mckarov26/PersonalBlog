@@ -5,6 +5,7 @@
 }
 .header {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   padding-left: 200px;
   padding-right: 200px;
@@ -28,27 +29,15 @@
 
 .header > .nav > ul {
   display: flex;
+  flex: 1;
   font-size: 24px;
   font-weight: bold;
   gap: 16px;
 }
 
-@media (max-width: 1000px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header > .nav > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .about-me {
   display: flex;
+  flex: 1;
   justify-content: center;
   padding: 50px;
   background-color: #80b9ad;
@@ -86,6 +75,7 @@ hr {
 }
 .travel-section > div {
   display: flex;
+  flex: 1;
   justify-content: space-around;
 }
 .travel-section img {
@@ -103,4 +93,29 @@ hr {
   font-size: 24px;
   font-weight: bold;
   color: #003285;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header > .nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .travel-section > div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
 }
