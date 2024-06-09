@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  background-color: #ffda78;
+  color: #2a629a;
+}
+.header > p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.M {
+  font-family: "Sassy Frass", cursive;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 50px;
+  color: #003285;
+}
+
+.header > .nav > ul {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header > .nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #80b9ad;
+}
+.about-me > img {
+  border-radius: 20%;
+  margin: 36px;
+  height: 600px;
+}
+
+.about-me .text1 {
+  font-size: 50px;
+  margin: 36px 36px 36px 0px;
+  color: #003285;
+}
+.about-me .text2 {
+  font-size: 36px;
+  width: 515px;
+  color: white;
+}
+
+hr {
+  color: #ffda78;
+}
+.travel-section {
+  background-color: #80b9ad;
+}
+.travel-section > h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 46px;
+  padding-top: 50px;
+  color: #003285;
+  font-weight: bold;
+}
+.travel-section > div {
+  display: flex;
+  justify-content: space-around;
+}
+.travel-section img {
+  height: 400px;
+  width: 350px;
+  border-radius: 20px;
+}
+.travel-section p {
+  width: 350px;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+}
+.travel-section .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003285;
+}
